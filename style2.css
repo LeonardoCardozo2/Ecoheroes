@@ -11,21 +11,10 @@ body{
 }
 .titulo{
 	text-align: center;
-	margin-top: 40px;
-	font-family: Time New Roman;
+	margin-top: 10px;
+	font-family: KaushanScript-Regular;
 	font-size: 10mm;
 	color: #000;
-}
-.cont-img{
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	margin-top: 100px;
-}
-.ImagenObjeto{
-	width: 300px;
-	height: 300px;
-	border-radius: 10px;
 }
 .cont-opciones{
 	display: flex;
@@ -33,9 +22,50 @@ body{
 	justify-content: center;
 	margin-top: 50px;
 }
-.Opcion{
-	width: 250px;
-	height: 250px
+.ImagenObjeto{
+	width: 200px;
+	height: 200px;
 	border-radius: 10px;
-	margin-right: 20px;
+}
+.Opcion{
+	width: 200px;
+	height: 250px;
+	border-radius: 10px;
+	margin-right: 40px;
+}
+.pie-de-imagen{
+	text-align: center;
+	margin-top: 5px;
+}
+.cont-boton{
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+.boton{
+	font-size: 6mm;
+	background-color: rgb(126, 102, 178);
+	width: 90vw;
+	padding: 9px;
+	border-style: none;
+	border-radius: 10px;
+}
+.cont-boton{
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	margin-top: 100px;
+}
+.cont-boton-v{
+	width: 100vw;
+	margin: 50px 0px;
+}
+.boton-v{
+	margin-left: 80%;
+	font-size: 4mm;
+	padding: 15px 40px;
+	background-color: red;
+	color: #fff;
+	border-style: none;
+	border-radius: 10px;
 }

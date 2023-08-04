@@ -1,6 +1,6 @@
 function correcto(){
-	window.location.href = "correcto.html"
+	alert("Opcion Correcta +1 punto")
 }
 function incorrecto(){
-	window.location.href = "incorrecto.html"
+	alert("Opcion incorrecta 0 puntos")
 }
