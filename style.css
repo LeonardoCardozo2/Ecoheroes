@@ -11,24 +11,13 @@ body{
 	font-family: impact;
 	font-size: 20mm;
 	color: red;
-	margin-top: 100px;
 }
 .boton-inicio{
-	background-color: rgb(244, 60, 60);
-	color: #fff;
+	background-color: blue;
 	font-size: 6mm;
 	padding: 20px 40px;
 	border-style: none;
 	border-radius: 10px;
 	margin-left: 44%;
 	margin-top: 50px;
-}
-.text-footer{
-	font-size: 6mm;
-	text-align: center;
-}
-footer{
-	margin-top: 100vh;
-	background-color: rgb(135, 78, 175);
-	padding: 30px;
 }
