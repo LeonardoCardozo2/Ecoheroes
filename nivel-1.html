@@ -6,12 +6,25 @@
 </head>
 <body>
 	<script type="text/javascript" src="codigo.js"></script>
-	<h1 class="titulo">Selecciona el contenedor correcto para el objeto</h1>
-	<img href="Imagenes/" class="ImagenObjeto">
+	<h1>Selecciona el contenedor correcto para el objeto</h1>
+	<div class="cont-objeto">
+	 <img href="Imagenes/">
+	 <h3>Botella</h3>
+	</div>
+
 	<div class="cont-opciones">
-		<img href="Imagenes/" class="Opcion" onclick="correcto()"></img>
-		<img href="Imagenes/" class="Opcion" onclick="incorrecto()"></img>
-		<img href="Imagenes/" class="Opcion" onclick="incorrecto()"></img>
+		<div >
+		 <img href="Imagenes/Plasticos.png" onclick="correcto()"></img>
+		 <h3>Nombre</h3>
+		</div>
+		<div>
+		 <img href="Imagenes/ejemplo.jpg" onclick="incorrecto()"></img>
+		 <h3>Nombre</h3>
+		</div>
+		<div>
+		 <img href="Imagenes/" onclick="incorrecto()"></img>
+		 <h3>Nombre</h3>
+		</div>
 	</div>
 </body>
 </html>

@@ -9,33 +9,41 @@
 body{
 	background-color: #02AC66; 
 }
-.titulo{
+h1{
 	text-align: center;
-	margin-top: 40px;
-	font-family: Time New Roman;
-	font-size: 10mm;
+	margin-top: 30px;
+	font-family: KaushanScript-Regular;
+	font-size: 11mm;
 	color: #000;
 }
-.cont-img{
+.cont-objeto{
 	display: flex;
-	align-content: center;
-	justify-content: center;
-	margin-top: 100px;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 50px;
 }
-.ImagenObjeto{
+.cont-objeto img{
 	width: 300px;
 	height: 300px;
 	border-radius: 10px;
 }
-.cont-opciones{
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	margin-top: 50px;
+.cont-objeto h3{
+	margin-top: 10px;
 }
-.Opcion{
+.cont-opciones{
+	display: grid;
+	grid-template-columns: 250px 250px 250px;
+	grid-gap: 40px;
+	margin: 50px 9% 100px 9%;
+}
+.cont-opciones div{
 	width: 250px;
-	height: 250px
+	height: 250px;
+	border: 2px solid #fff;
+}
+.cont-opciones img{
+	width: 250px;
+	height: 250px;
 	border-radius: 10px;
-	margin-right: 20px;
 }
