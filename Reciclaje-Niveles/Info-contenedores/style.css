@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: blue;
+}
+.cont-tarjeta{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: rgb(89, 113, 48);
+	width: 300px;
+	height: auto;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	border-radius: 20px;
+}
+.cont-tarjeta img{
+	width: 250px;
+	height: auto;
+	border-radius: 10px;
+}
+.cont-tarjeta p{
+	font-family: Time new Roman;
+	font-size: 5mm;
+}

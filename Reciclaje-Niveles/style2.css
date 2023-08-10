@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(../Fuentes/KaushanScript-Regular.otf);
+}
+body{
+	background-color: #6ea771; 
+}
+h1{
+	text-align: center;
+	margin-top: 20px;
+	font-family: KaushanScript-Regular;
+	font-size: 10mm;
+	color: #000;
+}
+.cont-objeto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	margin-top: 50px;
+}
+.cont-objeto img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+.cont-objeto h3{
+	margin-top: 10px;
+}
+.cont-opciones{
+	display: grid;
+	grid-template-columns: 160px 160px 160px 160px;
+	grid-gap: 60px;
+	margin: 50px 8% 100px 8%;
+}
+.cont-opciones div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 180px;
+	height: 220px;
+	border-radius: 10px;
+	background-color: #cc7e57;
+	padding: 10px;
+	transition: box-shadow 1s;
+}
+.cont-opciones div:hover{
+	box-shadow: 4px 5px 6px 5px rgb(192, 177, 206);
+	transition-duration: 0.5s;
+}
+.cont-opciones img{
+	width: 170px;
+	height: 170px;
+	border-radius: 10px;
+}
+.cont-opciones h3{
+	margin-top: 10px;
+	color: #fff;
+}
