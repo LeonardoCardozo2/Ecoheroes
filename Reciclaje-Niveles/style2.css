@@ -31,21 +31,26 @@ h1{
 .cont-objeto h3{
 	margin-top: 10px;
 }
+.cont-opciones-t{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: 50px 0 100px 0;
+}
 .cont-opciones{
 	display: grid;
 	grid-template-columns: 160px 160px 160px 160px;
 	grid-gap: 60px;
-	margin: 50px 8% 100px 8%;
 }
 .cont-opciones div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 180px;
-	height: 220px;
+	height: auto;
+	padding: 10px;
 	border-radius: 10px;
 	background-color: #cc7e57;
-	padding: 10px;
 	transition: box-shadow 1s;
 }
 .cont-opciones div:hover{
