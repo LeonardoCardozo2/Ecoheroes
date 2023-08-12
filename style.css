@@ -17,11 +17,15 @@ body{
 	margin-top: 10%;
 }
 .boton-inicio{
+	display: flex;
+	margin: auto;
 	background-color: blue;
 	font-size: 6mm;
 	padding: 20px 40px;
 	border-style: none;
 	border-radius: 10px;
-	margin-left: 44%;
 	margin-top: 50px;
+}
+a{
+	text-decoration: none;
 }

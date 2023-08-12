@@ -1,7 +1,3 @@
-function correcto(){
-	alert("correcto");
-
-}
-function incorrecto(){
-	alert("Incorrecto")
+function Organicos(){
+	window.location.href = "Info-contenedores/Organicos.html"
 }

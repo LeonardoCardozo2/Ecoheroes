@@ -5,15 +5,22 @@
 body{
 	background-color: blue;
 }
+h1{
+	display: inline-block;
+	color: #fff;
+	font-size: 15mm;
+	font-family: Algerian;
+	margin: 14% 0 0 17%;
+}
 .cont-tarjeta{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	float: right;
 	background: rgb(89, 113, 48);
 	width: 300px;
 	height: auto;
-	margin: auto;
-	margin-top: 50px;
+	margin: 50px 50px 0 0;
 	padding: 20px;
 	border-radius: 20px;
 }
@@ -25,4 +32,17 @@ body{
 .cont-tarjeta p{
 	font-family: Time new Roman;
 	font-size: 5mm;
+}
+.boton{
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	padding: 15px 100px;
+	border-radius: 15px;
+	background: red;
+	color: #fff;
+	font-size: 5mm;
+}
+a{
+	text-decoration: none;
 }
