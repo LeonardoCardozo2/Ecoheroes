@@ -9,6 +9,7 @@
 body{
 	background: rgb(7,2,87);
 	background: linear-gradient(180deg, rgba(7,2,87,1) 6%, rgba(39,9,121,1) 34%, rgba(0,212,255,1) 94%); 
+	background-repeat: no-repeat;
 }
 h1{
 	text-align: center;
@@ -32,17 +33,13 @@ h1{
 .cont-objeto h3{
 	margin-top: 10px;
 }
-.cont-opciones-t{
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	margin: 50px 0 100px 0;
-}
 .cont-opciones{
 	display: grid;
-	grid-template-columns: 160px 160px 160px 160px;
-	grid-gap: 60px;
+	grid-template-columns: 185px 185px 185px 185px;
+	grid-gap: 40px;
+	margin: 20px 0 50px 0;
+	align-content: center;
+	justify-content: center;
 }
 .cont-opciones div{
 	display: flex;
@@ -53,7 +50,7 @@ h1{
 	padding: 10px;
 	border-radius: 10px;
 	background-color: #cc7e57;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 .cont-opciones div:hover{
 	box-shadow: 4px 5px 6px 5px rgb(192, 177, 206);
