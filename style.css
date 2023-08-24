@@ -1,6 +1,55 @@
 *{
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
+}
+.contenedor_loader{
+    background-color: #4c4747;
+    position: fixed;
+    margin-top: -70px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transition: all 1.5s;
+}
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    animation: loader 1.5s infinite ease-in-out;
+}
+.loader{
+    color: #4685fa;
+    font-size: 15px;
+    position: relative;
+    margin: auto;
+    margin-top: 12%;
+    animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.loader:before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+}
+.loader:after {
+    left: 3.5em;
+}
+@keyframes loader{
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+        box-shadow: 0 2.5em 0 0;
+    }
 }
 body{
 	background-image: url(Imagenes/imagen-paisaje.jpg);
@@ -9,22 +58,32 @@ body{
 	background-size: cover;
 	height: 100vh;
 }
-.titulo{
-	text-align: center;
-	font-family: impact;
-	font-size: 20mm;
-	color: red;
-	margin-top: 10%;
+@font-face{
+    font-family: angrybirds-regular;
+    src: url(Fuentes/angrybirds-regular.ttf);
 }
-.boton-inicio{
+h1{
+	text-align: center;
+	font-family: angrybirds-regular;
+	font-size: 30mm;
+	color: red;
+	margin-top: 7%;
+}
+button{
 	display: flex;
 	margin: auto;
 	background-color: blue;
-	font-size: 6mm;
-	padding: 20px 40px;
+	font-size: 8mm;
+	padding: 20px 50px;
 	border-style: none;
 	border-radius: 10px;
 	margin-top: 50px;
+    transition: background 0.8s;
+    transition: color 1s;
+}
+button:hover{
+    background: red;
+    color: #fff;
 }
 a{
 	text-decoration: none;
