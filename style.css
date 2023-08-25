@@ -6,9 +6,9 @@
 .contenedor_loader{
     background-color: #4c4747;
     position: fixed;
-    margin-top: -70px;
+    margin-top: -90px;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     z-index: 9999;
     transition: all 1.5s;
 }
