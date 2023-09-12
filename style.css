@@ -73,10 +73,11 @@ button{
 	display: flex;
 	margin: auto;
 	background-color: blue;
+    font-family: ;
 	font-size: 8mm;
-	padding: 20px 50px;
 	border-style: none;
-	border-radius: 10px;
+	border-radius: 50px;
+    padding: 20px 70px;
 	margin-top: 50px;
     transition: background 0.8s;
     transition: color 1s;
@@ -86,5 +87,37 @@ button:hover{
     color: #fff;
 }
 a{
+    width: fit-content;
 	text-decoration: none;
+}
+
+#body2{
+    background: green;
+    height: 75vh;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    grid-gap: 30px;
+}
+.contenido div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: blue;
+    border-radius: 20px;
+    padding: 20px;
+    width: 260px;
+    height: 270px;
+}
+img{
+    width: 230px;
+    height: 170px;
+}
+b{
+    font-size: 5mm;
+    margin-top: 15px;
 }

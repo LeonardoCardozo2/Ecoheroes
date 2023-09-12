@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(../Fuentes/KaushanScript-Regular.otf);
+}
+.portada{
+	display: flex;
+	background-image: url(../Imagenes/imagen-paisaje.jpg);
+	background-position: center;
+	width: 100vw;
+	height: 150px;
+	margin-bottom: 50px;
+}
+h1{
+	font-family: KaushanScript-Regular;
+	font-size: 15mm;
+	color: #fff;
+	margin: 70px 0 0 40px;
+}
+video{
+	display: flex;
+	margin: auto;
+	width: 90vw;
+	height: 250px;
+}

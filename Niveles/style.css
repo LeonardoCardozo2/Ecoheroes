@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(../Fuentes/KaushanScript-Regular.otf);
+}
+body{
+	background: rgb(7,2,87);
+	background: linear-gradient(180deg, rgba(7,2,87,1) 6%, rgba(39,9,121,1) 34%, rgba(0,212,255,1) 94%);
+	background-repeat: no-repeat;
+}
+
+/*mensaje: siguiente nivel*/
+#cont-pregunta{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute; 
+	margin-top: -100%;
+	background: rgba(7, 87, 200, 0.64);
+	width: 100%;
+	height: 150%;
+}
+#cont-pregunta h1{
+	margin: 20% 0 50px 0;
+	font-size: 20mm;
+	font-family: Algerian;
+	color: rgb(255, 248, 248);
+}
+#cont-pregunta button{
+	font-size: 10mm;
+	padding: 20px 70px;
+	background: rgb(216, 119, 8);
+}
+
+.titulo{
+	text-align: center;
+	margin-top: 20px;
+	font-family: KaushanScript-Regular;
+	font-size: 10mm;
+	color: #fff;
+}
+.cont-objeto{
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 10px 25px;
+	border-radius: 5px;
+	border: 3px solid #fff;
+}
+.cont-objeto img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+.cont-objeto h3{
+	margin-top: 10px;
+	color: #fff;
+}
+
+/*Tarjetas de opciones*/
+.cont-opciones{
+	display: grid;
+	grid-template-columns: 200px 200px 200px 200px;
+	grid-gap: 40px;
+	margin: 20px 0 150px 0;
+	justify-content: center;
+}
+.card{
+	position: relative;
+	width: 200px;
+	height: 290px;
+	color: green;
+	background: url(../Imagenes/67.jpg) center no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/*Animación de las tarjetas*/
+.card_cont{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 280px;
+	padding: 20px;
+	background-color: #fff;
+	border-top-left-radius: 35px;
+	transform: translateY(220px);
+	transition: transform .25s;
+}
+h3{
+	color: #000;
+	line-height: 15px;
+	margin-bottom: 20px;
+}
+.card_cont p{
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity .5s;
+}
+.card:active .card_cont{
+	transform: translateY(0);
+}
+li{
+	margin-left: 10px;
+}
+
+button{
+	display: flex;
+	margin: auto;
+	align-items: center;
+	margin-bottom: 150px;
+	background: rgb(136, 107, 26);
+	padding: 10px 30%;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 18px;
+}
+a{
+	text-decoration: none;
+}
