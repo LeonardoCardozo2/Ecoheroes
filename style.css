@@ -91,6 +91,13 @@ a{
 	text-decoration: none;
 }
 
+@media screen (max-width: 400px){
+    h1{
+        font-size: 15mm;
+    }
+}
+
+/*Estilos de la página de contenidos*/
 #body2{
     background: green;
     height: 75vh;
