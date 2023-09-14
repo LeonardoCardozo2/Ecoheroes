@@ -3,6 +3,9 @@
 	padding: 0;
 }
 body{
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	background: rgb(112, 172, 76);
 }
 @font-face{
@@ -56,6 +59,7 @@ img{
 	width: 120px;
 	height: 120px;
 	padding: 30px;
+	border-radius: 10px;
 	background: rgb(125, 194, 102);
 	transition: padding 0.5s;
 }
@@ -124,6 +128,7 @@ h5{
 	.cont-titulo{
 		grid-template-columns: repeat(2, 100px);
 		grid-gap: 50px;
+		padding: 10px;
 	}
 
 	/*Tarjeta de pregunta*/
@@ -142,6 +147,7 @@ h5{
 		grid-template-columns: repeat(2, 160px);
 		grid-template-rows: repeat(3, 200px);
 		grid-gap: 10px;
+		margin-bottom: 100px;
 	}
 	.opciones div{
 		width: 100px;

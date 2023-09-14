@@ -52,11 +52,14 @@ section div{
     }
 }
 body{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	background-image: url(Imagenes/imagen-paisaje.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+	height: 88vh;
 }
 @font-face{
     font-family: angrybirds-regular;

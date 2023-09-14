@@ -8,6 +8,9 @@
     src: url(../Fuentes/KaushanScript-Regular.otf);
 }
 body{
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	background: rgb(7,2,87);
 	background: linear-gradient(180deg, rgba(7,2,87,1) 6%, rgba(39,9,121,1) 34%, rgba(0,212,255,1) 94%);
 	background-repeat: no-repeat;

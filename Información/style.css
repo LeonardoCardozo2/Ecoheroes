@@ -6,6 +6,11 @@
     font-family: KaushanScript-Regular;
     src: url(../Fuentes/KaushanScript-Regular.otf);
 }
+body{
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .portada{
 	display: flex;
 	background-image: url(../Imagenes/imagen-paisaje.jpg);
