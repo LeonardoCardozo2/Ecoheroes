@@ -26,3 +26,16 @@ video{
 	width: 90vw;
 	height: 250px;
 }
+@media screen and (max-width: 600px){
+	.portada{
+		height: 200px;
+		margin-bottom: 0;
+	}
+	h1{
+		font-size: 12mm;
+		margin: 120px 0 0 20px;
+	}
+	video{
+		width: 100vw;
+	}
+}

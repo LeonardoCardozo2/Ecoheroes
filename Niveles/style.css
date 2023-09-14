@@ -19,7 +19,7 @@ body{
 	flex-direction: column;
 	align-items: center;
 	position: absolute; 
-	margin-top: -100%;
+	margin-top: -300%;
 	background: rgba(7, 87, 200, 0.64);
 	width: 100%;
 	height: 150%;
@@ -38,7 +38,7 @@ body{
 
 .titulo{
 	text-align: center;
-	margin-top: 20px;
+	margin: 20px 10px 0 10px;
 	font-family: KaushanScript-Regular;
 	font-size: 10mm;
 	color: #fff;
@@ -68,7 +68,7 @@ body{
 /*Tarjetas de opciones*/
 .cont-opciones{
 	display: grid;
-	grid-template-columns: 200px 200px 200px 200px;
+	grid-template-columns: repeat(4, 200px);
 	grid-gap: 40px;
 	margin: 20px 0 150px 0;
 	justify-content: center;
@@ -127,4 +127,40 @@ button{
 }
 a{
 	text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+	.cont-opciones{
+		grid-gap: 15px;
+		grid-template-columns: repeat(2, 170px);
+		grid-template-rows: repeat(2, 200px);
+	}
+	.card{
+		width: 170px;
+	    height: 200px;
+	}
+	#cont-pregunta h1{
+	margin: 20% 0 50px 0;
+	font-size: 12mm;
+	text-align: center;
+	font-family: Algerian;
+	color: rgb(255, 248, 248);
+	}
+	#cont-pregunta button{
+	font-size: 8mm;
+	padding: 15px 60px;
+	background: rgb(216, 119, 8);
+	}
+	.titulo{
+		font-size: 7mm;
+	}
+	.card_cont{
+		height: 270px;
+	}
+	.card_cont p{
+		font-size: 5mm;
+	}
+	button{
+		margin-bottom: 250px;
+	}
 }
