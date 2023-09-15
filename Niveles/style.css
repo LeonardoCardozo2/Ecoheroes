@@ -16,24 +16,23 @@ body{
 	background-repeat: no-repeat;
 }
 
-/*mensaje: siguiente nivel*/
-#cont-pregunta{
+#mensaje{
 	display: flex;
+	position: absolute; 
 	flex-direction: column;
 	align-items: center;
-	position: absolute; 
-	margin-top: -300%;
+	top: -650px;
 	background: rgba(7, 87, 200, 0.64);
-	width: 100%;
-	height: 150%;
+	width: 100vw;
+	height: 100vh;
 }
-#cont-pregunta h1{
+#mensaje h1{
 	margin: 20% 0 50px 0;
 	font-size: 20mm;
 	font-family: Algerian;
 	color: rgb(255, 248, 248);
 }
-#cont-pregunta button{
+#mensaje button{
 	font-size: 10mm;
 	padding: 20px 70px;
 	background: rgb(216, 119, 8);

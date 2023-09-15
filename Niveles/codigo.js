@@ -1,4 +1,4 @@
 function mostrarDiv(){
-  document.getElementById("cont-pregunta").style.marginTop = "-20px";
-  document.getElementById("cont-pregunta").style.zIndex = "50";
+  document.getElementById("mensaje").style.marginTop = "200px";
+  document.getElementById("mensaje").style.zIndex = "50";
 }
