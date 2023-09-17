@@ -59,7 +59,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 88vh;
+	height: 100vh;
 }
 @font-face{
     font-family: angrybirds-regular;
@@ -69,6 +69,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 h1{
 	font-family: angrybirds-regular;
@@ -129,6 +132,9 @@ b{
 }
 
 @media screen and (max-width: 600px){
+    body{
+        background-image: url(Imagenes/imágen-paisaje-movil.jpg);
+    }
     h1{
         font-size: 17mm;
     }

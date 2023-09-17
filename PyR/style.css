@@ -16,7 +16,7 @@ body{
 	display: grid;
 	align-items: center;
 	justify-content: center;
-	grid-template-columns: 190px 70px;
+	grid-template-columns: repeat(2, 200px);
 	grid-gap: 150px;
 	background: rgb(226, 24, 24);
 	padding: 20px;
@@ -24,6 +24,7 @@ body{
 }
 b{
 	font-size: 6mm;
+	color: #fff;
 }
 .cont-pregunta{
 	display: flex;
@@ -61,76 +62,24 @@ img{
 	padding: 30px;
 	border-radius: 10px;
 	background: rgb(125, 194, 102);
-	transition: padding 0.5s;
+	transition: padding 0.8s, box-shadow 0.5s;
 }
 .opciones div:hover{
 	padding: 40px;
 }
+.opciones div:active{
+	box-shadow: 4px 4px 15px 9px red;
+}
 
-/*Estilos de la página de temas*/
-.body2{
-	background: rgb(52, 150, 52);
-}
-h1{
-	font-family: KaushanScript-Regular;
-	font-size: 12mm;
-	text-align: center;
-	color: #fff;
-}
-.cont-opc{
-	display: grid;
-	justify-content: center;
-	grid-gap: 50px;
-	grid-template-columns: repeat(3, 190px);
-	grid-template-rows: repeat(3, 200px);
-	margin-top: 50px;
-}
-.cont-opc div{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	border-radius: 10px;
-	padding: 5px;
-	background: rgb(114, 197, 105);
-}
-.cont-opc img{
-	width: 150px;
-	height: 140px;
-	margin-bottom: 15px;
-}
-h5{
-	text-align: center;
-}
 @media screen and (max-width: 600px){
-	.cont-opc{
-		grid-gap: 15px;
-		grid-template-columns: repeat(2, 150px);
-		grid-template-rows: repeat(3, 180px);
-		margin-bottom: 50px;
-	}
-	.cont-opc div{
-		width: 140px;
-		height: auto;
-	}
-	.cont-opc img{
-		width: 120px;
-		height: 120px;
-	}
-	h5{
-		font-size: 4mm;
-	}
-	h1{
-		margin-top: 25px;
-		font-size: 8mm;
-	}
-
-	/*Diseño responsive del juego*/
 	.cont-titulo{
-		grid-template-columns: repeat(2, 100px);
-		grid-gap: 50px;
-		padding: 10px;
+		grid-template-columns: repeat(2, 150px);
+		grid-gap: 10px;
+		padding: 30px;
 	}
-
+	b{
+		font-size: 5mm;
+	}
 	/*Tarjeta de pregunta*/
 	.cont-pregunta{
 		flex-direction: column;
