@@ -7,7 +7,7 @@
     src: url(../Fuentes/KaushanScript-Regular.otf);
 }
 body{
-	-webkit-user-select: none;
+    -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
