@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background: rgb(112, 172, 76);
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(../Fuentes/KaushanScript-Regular.otf);
+}
+.cont-titulo{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(2, 200px);
+	grid-gap: 150px;
+	background: rgb(226, 24, 24);
+	padding: 20px;
+	border-radius: 0 0 35px 35px;
+}
+b{
+	font-size: 6mm;
+	color: #fff;
+}
+.cont-pregunta{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	background: green;
+	padding: 30px;
+	width: 700px;
+	border-radius: 20px;
+	height: auto;
+	margin-top: 50px;
+}
+.cont-pregunta p{
+	width: 400px;
+	margin-left: 50px;
+}
+img{
+	width: 200px;
+	height: 200px;
+}
+.opciones{
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(2, 200px);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 50px;
+	margin: 50px 0 100px 0;
+}
+.opciones div{
+	display: flex;
+	align-items: center;
+	width: 120px;
+	height: 120px;
+	padding: 30px;
+	border-radius: 10px;
+	background: rgb(125, 194, 102);
+	transition: padding 0.8s, box-shadow 0.5s;
+}
+.opciones div:hover{
+	padding: 40px;
+}
+.opciones div:active{
+	box-shadow: 4px 4px 15px 9px red;
+}
+.boton1, .boton-volver{
+	font-size: 5mm;
+	color: #fff;
+	padding: 20px 50px;
+	background: red;
+	margin-bottom: 100px;
+	border-radius: 20px;
+}
+.boton1{
+	float: left;
+	margin-left: 10%;
+}
+.boton-volver{
+	float: right;
+	margin-right: 10%;
+}
+
+@media screen and (max-width: 600px){
+	.cont-titulo{
+		grid-template-columns: repeat(2, 150px);
+		grid-gap: 10px;
+		padding: 30px;
+	}
+	b{
+		font-size: 5mm;
+	}
+	/*Tarjeta de pregunta*/
+	.cont-pregunta{
+		flex-direction: column;
+		width: 250px;
+	}
+	.cont-pregunta p{
+		margin-top: 25px;
+		width: 225px;
+		margin-left: 0;
+	}
+
+	/*Opciones de respuestas*/
+	.opciones{
+		grid-template-columns: repeat(2, 160px);
+		grid-template-rows: repeat(3, 200px);
+		grid-gap: 10px;
+		margin-bottom: 100px;
+	}
+	.opciones div{
+		width: 100px;
+		height: 100px;
+	}
+}
