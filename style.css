@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Animación de inicio*/
 section div{
     background-color: #4c4747;
     position: fixed;
@@ -49,25 +51,30 @@ section div{
         box-shadow: 0 2.5em 0 0;
     }
 }
+
+/*Fuentes*/
+@font-face{
+    font-family: angrybirds-regular;
+    src: url(Fuentes/angrybirds-regular.ttf);
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(Fuentes/KaushanScript-Regular.otf);
+}
+
 body{
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     background-image: url(Imagenes/imagen-paisaje.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
-@font-face{
-    font-family: angrybirds-regular;
-    src: url(Fuentes/angrybirds-regular.ttf);
-}
 .cont-inicio{
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
+    margin-top: 70px;
     left: 0;
     right: 0;
 }
@@ -75,16 +82,15 @@ h1{
     font-family: angrybirds-regular;
     font-size: 25mm;
     color: red;
-    margin-top: 150px;
 }
 button{
     background-color: blue;
-    font-family: ;
-    font-size: 8mm;
-    border-style: none;
     border-radius: 50px;
-    padding: 20px 70px;
+    border-style: none;
+    padding: 9px 50px;
     margin-top: 50px;
+	font-family: KaushanScript-Regular;
+	font-size: 8mm;
     transition: background 0.8s;
     transition: color 1s;
 }
@@ -96,64 +102,20 @@ a{
     text-decoration: none;
 }
 
-/*Estilos de la página de contenidos*/
-#body2{
-    background: rgb(52, 150, 52);
-}
-.contenido{
-    display: grid;
-    grid-template-columns: repeat(3, 280px);
-    grid-gap: 10px;
-    justify-content: center;
-    margin-top: 10%;
-}
-.contenido div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgb(114, 197, 105);
-    border-radius: 20px;
-    padding: 20px;
-    width: 250px;
-    height: 270px;
-}
-img{
-    width: 230px;
-    height: 170px;
-}
-b{
-    text-align: center;
-    font-size: 5mm;
-    margin-top: 15px;
-}
-
 @media screen and (max-width: 600px){
     body{
         background-image: url(Imagenes/imágen-paisaje-movil.jpg);
-    }
-    .loader{
-        margin-top: 50%;
     }
     h1{
         font-size: 17mm;
     }
     .cont-inicio{
-        margin-top: 20%;
+        margin-top: 50%;
     }
     button{
         margin-top: 20px;
-        font-size: 5mm;
-        padding: 20px 50px;
-        border-style: none;
-    }
-
-    /*Estilos de la página de contenidos*/
-    .contenido{
-        grid-gap: 30px;
-        grid-template-columns: repeat(1, 260px);
-    }
-    .contenido div{
-        height: 260px;
+        font-size: 7mm;
+        padding: 10px 50px;
     }
 
 }

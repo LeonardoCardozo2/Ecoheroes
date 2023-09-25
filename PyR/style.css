@@ -57,26 +57,23 @@ img{
 .opciones div{
 	display: flex;
 	align-items: center;
-	width: 120px;
-	height: 120px;
+	width: 140px;
+	height: 130px;
 	padding: 30px;
-	border-radius: 10px;
+	border-radius: 20px;
 	background: rgb(125, 194, 102);
 	transition: padding 0.8s, box-shadow 0.5s;
 }
 .opciones div:hover{
 	padding: 40px;
 }
-.opciones div:active{
-	box-shadow: 4px 4px 15px 9px red;
-}
 .boton1, .boton-volver{
 	font-size: 5mm;
-	color: #fff;
-	padding: 20px 50px;
-	background: red;
+	padding: 15px 40px;
+	background: rgb(125, 194, 102);
 	margin-bottom: 100px;
-	border-radius: 20px;
+	border-radius: 30px;
+	border: solid #000 2px;
 }
 .boton1{
 	float: left;
