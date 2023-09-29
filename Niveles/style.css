@@ -68,32 +68,33 @@ body{
 	border: 3px solid #fff;
 }
 .cont-objeto img{
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 250px;
+	object-fit: cover;
 	border-radius: 10px;
 }
 .cont-objeto h3{
+	font-size: 8mm;
 	margin-top: 10px;
-	color: #fff;
+	color: red;
 }
 
 /*Tarjetas de opciones*/
 .cont-opciones{
 	display: grid;
-	grid-template-columns: repeat(4, 200px);
-	grid-gap: 40px;
+	grid-template-columns: repeat(4, 250px);
+	grid-gap: 25px;
 	margin: 20px 0 150px 0;
 	justify-content: center;
 }
 .card{
 	position: relative;
-	width: 200px;
 	height: 290px;
 	color: green;
 	border-radius: 10px;
 	overflow: hidden;
 }
-.card2, .card2, .card3, .card4{
+.card1, .card2, .card2, .card3, .card4{
 	background-position: center;
 	background-size: contain;
 }
