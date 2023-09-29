@@ -1,14 +1,15 @@
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.contenedor_loader{
+
+/*Animación de inicio*/
+section div{
     background-color: #4c4747;
     position: fixed;
-    margin-top: -90px;
-    width: 100vw;
-    height: 120vh;
+    width: 100%;
+    height: 100%;
     z-index: 9999;
     transition: all 1.5s;
 }
@@ -25,14 +26,13 @@
     font-size: 15px;
     position: relative;
     margin: auto;
-    margin-top: 12%;
+    margin-top: 15%;
     animation-delay: -0.16s;
 }
 .loader:before,
 .loader:after {
     content: '';
     position: absolute;
-    top: 0;
 }
 .loader:before {
     left: -3.5em;
@@ -51,33 +51,49 @@
         box-shadow: 0 2.5em 0 0;
     }
 }
-body{
-	background-image: url(Imagenes/imagen-paisaje.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 100vh;
-}
+
+/*Fuentes*/
 @font-face{
     font-family: angrybirds-regular;
     src: url(Fuentes/angrybirds-regular.ttf);
 }
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(Fuentes/KaushanScript-Regular.otf);
+}
+
+body{
+    background-image: url(Imagenes/imagen-paisaje.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.cont-inicio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 10%;
+    left: 0;
+    right: 0;
+}
 h1{
-	text-align: center;
-	font-family: angrybirds-regular;
-	font-size: 30mm;
-	color: red;
-	margin-top: 7%;
+    font-family: angrybirds-regular;
+    font-size: 25mm;
+    color: red;
 }
 button{
-	display: flex;
-	margin: auto;
-	background-color: blue;
+    background-color: blue;
+    border-radius: 50px;
+    border-style: none;
+    padding: 9px 50px;
+    margin-top: 50px;
+	font-family: KaushanScript-Regular;
 	font-size: 8mm;
-	padding: 20px 50px;
-	border-style: none;
-	border-radius: 10px;
-	margin-top: 50px;
     transition: background 0.8s;
     transition: color 1s;
 }
@@ -86,5 +102,23 @@ button:hover{
     color: #fff;
 }
 a{
-	text-decoration: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-image: url(Imagenes/imágen-paisaje-movil.jpg);
+    }
+    h1{
+        font-size: 17mm;
+    }
+    .cont-inicio{
+        margin-top: 50%;
+    }
+    button{
+        margin-top: 20px;
+        font-size: 7mm;
+        padding: 10px 50px;
+    }
+
 }

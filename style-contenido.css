@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(52, 150, 52);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(Fuentes/KaushanScript-Regular.otf);
+}
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-gap: 5%;
+    justify-content: center;
+    margin-top: 10%;
+}
+.contenido div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(114, 197, 105);
+    border-radius: 20px;
+}
+img{
+    width: 250px;
+    height: 170px;
+    border-radius: 25px 0;
+    object-fit: cover;
+}
+b{
+    text-align: center;
+    font-size: 5mm;
+    padding: 20px 0;
+}
+button{
+    border-style: none;
+}
+
+@media screen and (max-width: 600px){
+    .contenido{
+        grid-gap: 30px;
+        grid-template-columns: repeat(1, 250px);
+        margin-bottom: 100px;
+    }
+}

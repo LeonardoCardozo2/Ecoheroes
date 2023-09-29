@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(../Fuentes/KaushanScript-Regular.otf);
+}
+body{
+	background: rgb(107, 162, 84);
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.portada{
+	display: flex;
+	background-image: url(../Imagenes/landscape-1844226_1920.png);
+	background-position: center;
+	width: 100vw;
+	height: 250px;
+	margin-bottom: 50px;
+}
+h1{
+	font-family: KaushanScript-Regular;
+	font-size: 15mm;
+	color: #fff;
+	margin: 150px 0 0 10px;
+}
+iframe{
+	display: flex;
+	margin: auto;
+	border-radius: 20px;
+	width: 90vw;
+	height: 250px;
+}
+@media screen and (max-width: 600px){
+	.portada{
+		height: 200px;
+		margin-bottom: 0;
+	}
+	h1{
+		font-size: 12mm;
+		margin: 120px 0 0 20px;
+	}
+	iframe{
+		width: 100vw;
+	}
+}
