@@ -4,6 +4,9 @@
 }
 body{
     background: rgb(52, 150, 52);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 @font-face{
     font-family: KaushanScript-Regular;
@@ -42,12 +45,6 @@ button{
     .contenido{
         grid-gap: 30px;
         grid-template-columns: repeat(1, 250px);
-    }
-    .contenido div{
-        padding: 15px;
-    }
-    img{
-        width: 200px;
-        height: 150px;
+        margin-bottom: 100px;
     }
 }

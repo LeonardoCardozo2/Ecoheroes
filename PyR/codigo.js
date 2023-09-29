@@ -1,7 +1,10 @@
+function mostrarDiv(){
+  document.getElementById("mensaje").style.top = "0";
+  document.getElementById("mensaje").style.zIndex = "50";
+}
+
 window.onload = function() {
   var elem = document.documentElement;
-  
->>>>>>> c44ef4b6180c59cefa9cc8299477201a4511277e
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.mozRequestFullScreen) { // Firefox

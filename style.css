@@ -68,13 +68,16 @@ body{
     background-position: center;
     background-size: cover;
     height: 100vh;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .cont-inicio{
     display: flex;
     align-items: center;
     flex-direction: column;
     position: absolute;
-    margin-top: 70px;
+    margin-top: 10%;
     left: 0;
     right: 0;
 }

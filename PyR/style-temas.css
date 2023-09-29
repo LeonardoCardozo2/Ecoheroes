@@ -4,6 +4,9 @@
 }
 body{
 	background: rgb(52, 150, 52);
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 @font-face{
     font-family: KaushanScript-Regular;
