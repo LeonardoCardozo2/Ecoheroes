@@ -90,10 +90,24 @@ body{
 	width: 200px;
 	height: 290px;
 	color: green;
-	background: url(../Imagenes/67.jpg) center no-repeat;
-	background-size: cover;
 	border-radius: 10px;
 	overflow: hidden;
+}
+.card2, .card2, .card3, .card4{
+	background-position: center;
+	background-size: contain;
+}
+.card1{
+	background-image: url(../Imagenes/Niveles/carton.png);
+}
+.card2{
+	background-image: url(../Imagenes/Niveles/orgánicos.png);
+}
+.card3{
+	background-image: url(../Imagenes/Niveles/plásticos.png);
+}
+.card4{
+	background-image: url(../Imagenes/Niveles/vidrios.png);
 }
 
 /*Animación de las tarjetas*/
@@ -120,6 +134,11 @@ h2{
 }
 .card:active .card_cont{
 	transform: translateY(0);
+}
+.card-cont img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
 }
 li{
 	margin-left: 10px;
