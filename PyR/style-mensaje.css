@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: rgb(42, 114, 170);
+}
+h1{
+	color: green;
+	text-align: center;
+	margin-top: 100px;
+}
+.cont-boton{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+button{
+	width: 100%;
+	background: rgb(212, 62, 134);
+	padding: 15px;
+	font-size: 6mm;
+	border-radius: 15px;
+	border-style: none;
+}
+a{
+	text-decoration: none;
+	width: 30%;
+}

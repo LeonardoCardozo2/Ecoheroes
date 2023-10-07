@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: KaushanScript-Regular;
+    src: url(../Fuentes/KaushanScript-Regular.otf);
+}
+body{
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background: blue;
+}
+
+.cont-menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+h1{
+	font-size: 15mm;
+	color: #fff;
+	font-family: KaushanScript-Regular;
+}
+.cont-flex{
+	display: grid;
+	grid-template-columns: repeat(2, 300px);
+	grid-gap: 20px;
+	margin-top: 90px;
+	border: solid #fff 6px;
+	border-style: double;
+	padding: 30px;
+	width: fit-content;
+}
+.cont-flex div{
+	background: green;
+	padding: 50px 80px;
+	border-radius: 10px;
+}
+p{
+	font-size: 7mm;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px){
+	.cont-flex{
+		grid-template-columns: repeat(1, 250px);
+	}
+}

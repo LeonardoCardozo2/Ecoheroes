@@ -12,12 +12,16 @@
     src: url(../Fuentes/angrybirds-regular.ttf);
 }
 body{
+	-webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 	background: rgb(125, 194, 102);
 }
 h1{
 	text-align: center;
 	font-family: KaushanScript-Regular;
 	margin-top: 20px;
+	font-size: 13mm;
 }
 .cont-info{
 	display: flex;

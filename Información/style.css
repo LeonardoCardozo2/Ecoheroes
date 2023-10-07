@@ -33,6 +33,19 @@ video{
 	width: 90vw;
 	height: 250px;
 }
+.cont-resumen{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 80%;
+	padding: 20px;
+	border-radius: 15px;
+	background: rgb(153, 248, 179);
+}
+p{
+	font-size: 5mm;
+}
+
 @media screen and (max-width: 600px){
 	.portada{
 		height: 200px;
@@ -42,7 +55,7 @@ video{
 		font-size: 12mm;
 		margin: 120px 0 0 20px;
 	}
-	iframe{
+	video{
 		width: 100vw;
 	}
 }
