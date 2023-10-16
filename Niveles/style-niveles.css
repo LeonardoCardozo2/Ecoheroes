@@ -10,7 +10,7 @@ body{
 	-webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	background: blue;
+	background: rgb(125, 194, 102);
 }
 
 .cont-menu{
@@ -37,7 +37,7 @@ h1{
 }
 .cont-flex div{
 	background: green;
-	padding: 50px 80px;
+	padding: 35px 80px;
 	border-radius: 10px;
 }
 p{

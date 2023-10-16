@@ -89,7 +89,7 @@ body{
 }
 .card{
 	position: relative;
-	height: 290px;
+	height: 300px;
 	color: green;
 	border-radius: 10px;
 	overflow: hidden;
@@ -118,10 +118,10 @@ body{
 	bottom: 0;
 	width: 100%;
 	height: 280px;
-	padding: 20px;
+	padding: 15px;
 	background-color: #fff;
 	border-top-left-radius: 35px;
-	transform: translateY(225px);
+	transform: translateY(230px);
 	transition: transform .25s;
 }
 h2{
@@ -135,11 +135,6 @@ h2{
 }
 .card:active .card_cont{
 	transform: translateY(0);
-}
-.card-cont img{
-	width: 200px;
-	height: 200px;
-	object-fit: cover;
 }
 li{
 	margin-left: 10px;
@@ -179,7 +174,14 @@ a{
 
 	.card{
 		width: 170px;
-	    height: 200px;
+	    height: 250px;
+	}
+	.card_cont{
+		height: 240px;
+		transform: translateY(190px);
+	}
+	.card_cont p{
+		font-size: 5mm;
 	}
 	#cont-pregunta h1{
 		margin: 20% 0 50px 0;
@@ -206,12 +208,7 @@ a{
 	.titulo{
 		font-size: 7mm;
 	}
-	.card_cont{
-		height: 270px;
-	}
-	.card_cont p{
-		font-size: 5mm;
-	}
+	
 	button{
 		margin-bottom: 250px;
 	}

@@ -33,16 +33,23 @@ h1{
 }
 h3{
 	background: rgb(153, 248, 179);
+	text-align: center;
 	padding: 30px;
-	width: 80%;
+	width: 70%;
 	border-radius: 20px;
 }
 img{
 	width: 70%;
-	height: 500px;
+	height: 400px;
 	object-fit: cover;
 	margin-top: 20px;
 	border-radius: 15px;
+	border: solid #fff 4px;
+}
+figcaption{
+	color: #fff;
+	font-size: 5mm;
+	margin-top: 5px;
 }
 .cont-boton{
 	display: flex;

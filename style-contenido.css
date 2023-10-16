@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background: rgb(52, 150, 52);
+    background: rgb(125, 194, 102);
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -23,19 +23,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(114, 197, 105);
+    background: rgb(153, 248, 179);
     border-radius: 20px;
+    border-bottom: solid blue 5px;
 }
 img{
-    width: 250px;
-    height: 170px;
+    width: 100%;
+    height: 200px;
     border-radius: 25px 0;
     object-fit: cover;
 }
 b{
     text-align: center;
     font-size: 5mm;
-    padding: 20px 0;
+    margin-top: 20px;
 }
 button{
     border-style: none;
@@ -44,7 +45,10 @@ button{
 @media screen and (max-width: 600px){
     .contenido{
         grid-gap: 30px;
-        grid-template-columns: repeat(1, 250px);
+        grid-template-columns: repeat(1, 300px);
         margin-bottom: 100px;
+    }
+    b{
+        margin-bottom: 20px;
     }
 }
