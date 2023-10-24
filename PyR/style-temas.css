@@ -34,10 +34,14 @@ h1{
 	border-radius: 10px;
 	padding: 5px;
 	background: rgb(114, 197, 105);
+	transition: box-shadow 0.6s;
+}
+.cont-opc div:hover{
+	box-shadow: 4px 5px 6px 3px #000;
 }
 .cont-opc img{
 	border-radius: 10px;
-	width: 180px;
+	width: 90%;
 	height: 160px;
 	margin-bottom: 15px;
 }
@@ -48,17 +52,13 @@ h5{
 
 @media screen and (max-width: 600px){
 	.cont-opc{
-		grid-gap: 15px;
 		grid-template-columns: repeat(2, 150px);
 		grid-template-rows: repeat(3, 180px);
 		margin-bottom: 50px;
-	}
-	.cont-opc div{
-		width: 140px;
-		height: auto;
+		grid-gap: 20px;
 	}
 	.cont-opc img{
-		width: 120px;
+		width: 90%;
 		height: 120px;
 	}
 	h5{

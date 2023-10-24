@@ -19,10 +19,11 @@ body{
     src: url(../Fuentes/angrybirds-regular.ttf);
 }
 
+/*Barra de información*/
 .cont-titulo{
 	display: flex;
 	background: rgb(226, 24, 24);
-	padding: 20px;
+	padding: 10px;
 	border-radius: 0 0 35px 35px;
 }
 b{
@@ -30,9 +31,15 @@ b{
 	font-size: 6mm;
 	color: #fff;
 }
+.b2{
+	padding: 7px 15px;
+	border-radius: 20px;
+	background: blue;
+}
+
+/*Tarjeta de pregunta*/
 .cont-pregunta{
 	display: flex;
-	align-items: center;
 	margin: auto;
 	background: green;
 	padding: 30px;
@@ -45,6 +52,7 @@ b{
 	font-size: 6mm;
 	width: 60%;
 	margin: auto;
+	text-align: center;
 }
 img{
 	width: 250px;
@@ -52,6 +60,8 @@ img{
 	border-radius: 10px;
 	object-fit: cover;
 }
+
+/*Tabla de opciones de respuesta*/
 .opciones{
 	display: grid;
 	grid-template-columns: repeat(3, 170px);
@@ -74,13 +84,14 @@ img{
 	box-shadow: 4px 10px 15px 10px rgb(67, 177, 255);
 }
 
+/*Botones de navegación*/
 .boton1, .boton-volver{
-	font-size: 5mm;
 	padding: 15px 50px;
 	background: rgb(125, 194, 102);
 	margin-bottom: 100px;
 	border-radius: 25px;
 	border: solid #000 2px;
+	font-size: 4mm;
 }
 .boton1{
 	float: left;
@@ -118,6 +129,9 @@ img{
 }
 
 @media screen and (max-width: 600px){
+	.cont-titulo{
+		padding: 15px;
+	}
 	b{
 		font-size: 5mm;
 	}

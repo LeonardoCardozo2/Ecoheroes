@@ -86,7 +86,7 @@ h1{
     font-size: 25mm;
     color: red;
 }
-button{
+.cont-inicio button{
     background-color: blue;
     border-radius: 50px;
     border-style: none;
@@ -97,12 +97,69 @@ button{
     transition: background 0.8s;
     transition: color 1s;
 }
-button:hover{
+.cont-inicio button:hover{
     background: red;
     color: #fff;
 }
 a{
     text-decoration: none;
+}
+
+/*Barra Lateral*/
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+.cont-menu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cont-menu img{
+    width: 200px;
+    height: 200px;
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 600px){
