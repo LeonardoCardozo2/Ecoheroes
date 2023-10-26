@@ -49,11 +49,11 @@ p{
 	font-family: 'Gabarito', sans-serif;
 }
 .subtitulo{
-	font-family: Algerian;
+	font-family: 'Gabarito';
 	text-align: center;
 	margin: 30px 0;
 	color: #fff;
-	margin-top: 100px;
+	margin-top: 60px;
 }
 .cont-linea{
 	display: flex;
@@ -66,6 +66,27 @@ p{
 	border: solid #fff 2px;
 	border-radius: 2px;
 	margin: auto;
+}
+
+/*botones de navegación*/
+.cont-boton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 0;
+}
+button{
+	color: rgb(153, 248, 179);
+	width: 100%;
+	padding: 10px;
+	color: #000;
+	border-radius: 15px;
+	border-style: none;
+}
+a{
+	width: 30%;
+	text-decoration: none;
+	font-size: 6mm;
 }
 
 /*Tarjetas de información*/
@@ -100,7 +121,7 @@ img{
 	
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
 	.portada{
 		height: 200px;
 		margin-bottom: 0;
@@ -116,7 +137,7 @@ img{
 	}
 	.cont-resumen{
 		overflow: scroll;
-		height: 350px;
+		height: 480px;
 	}
 	.cont-resumen p{
 		margin-top: 490px;
@@ -126,5 +147,14 @@ img{
 	}
 	.cont-tarjetas h2{
 		font-size: 6mm;
+	}
+}
+@media screen and (max-width: 400px){
+	.cont-resumen{
+		overflow: scroll;
+		height: 400px;
+	}
+	a{
+		width: 80%;
 	}
 }
