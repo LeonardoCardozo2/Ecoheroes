@@ -28,7 +28,7 @@ body{
 }
 b{
 	margin: auto;
-	font-size: 4mm;
+	font-size: 5mm;
 	color: #fff;
 }
 .b2{
@@ -133,7 +133,7 @@ img{
 		padding: 15px;
 	}
 	b{
-		font-size: 5mm;
+		font-size: 4mm;
 	}
 	.cont-pregunta{
 		flex-direction: column;
