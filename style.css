@@ -75,23 +75,21 @@ body{
 .cont-inicio{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    position: absolute;
-    margin-top: 10%;
-    left: 0;
-    right: 0;
+    height: 90vh;
 }
 h1{
     font-family: angrybirds-regular;
     font-size: 25mm;
     color: red;
+    margin-bottom: 25px;
 }
 .cont-inicio button{
     background-color: blue;
     border-radius: 50px;
     border-style: none;
     padding: 9px 50px;
-    margin-top: 50px;
 	font-family: KaushanScript-Regular;
 	font-size: 8mm;
     transition: background 0.8s;
@@ -106,6 +104,13 @@ a{
 }
 
 /*Barra Lateral*/
+.boton-barra{
+    display: flex;
+    margin: 20px 0 0 40px;
+    position: absolute;
+    border: solid #fff 2px;
+    padding: 5px 10px;
+}
 #btn-menu{
     display: none;
 }
@@ -113,7 +118,7 @@ a{
     position: absolute;
     background: rgba(0,0,0,0.5);
     width: 100%;
-    height: 100vh;
+    height: vh;
     position: fixed;
     top: 0;left: 0;
     transition: all 500ms ease;
@@ -169,11 +174,7 @@ h2{
     h1{
         font-size: 17mm;
     }
-    .cont-inicio{
-        margin-top: 50%;
-    }
     button{
-        margin-top: 20px;
         font-size: 7mm;
         padding: 10px 50px;
     }

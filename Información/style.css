@@ -32,19 +32,17 @@ video{
 	display: flex;
 	margin: auto;
 	border-radius: 20px;
-	width: 70vw;
+	width: 80%;
 	height: 300px;
 }
-.cont-resumen{
-	display: flex;
-	align-items: center;
+#cont-resumen{
 	margin: auto;
 	width: 80%;
 	padding: 20px;
 	border-radius: 15px;
 	background: rgb(153, 248, 179);
 }
-p{
+#cont-resumen p{
 	font-size: 5mm;
 	font-family: 'Gabarito', sans-serif;
 }
@@ -71,7 +69,7 @@ p{
 /*Tarjetas de información*/
 .cont-tarjetas{
 	display: grid;
-	grid-template-columns: repeat(2, 350px);
+	grid-template-columns: repeat(2, 370px);
 	grid-gap: 50px;
 	justify-content: center;
 	margin-top: 50px;
@@ -100,31 +98,36 @@ img{
 	
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
 	.portada{
 		height: 200px;
-		margin-bottom: 0;
+	}
+	video{
+		width: 90%;
 	}
 	h1{
 		font-size: 12mm;
 		margin: 120px 0 0 20px;
 	}
-	video{
-		width: 100vw;
-		height: 250px;
-		border-radius: 0;
-	}
-	.cont-resumen{
-		overflow: scroll;
-		height: 350px;
-	}
-	.cont-resumen p{
-		margin-top: 490px;
-	}
 	.cont-tarjetas{
-		grid-template-columns: 320px;
+		grid-template-columns: 60%;
 	}
 	.cont-tarjetas h2{
 		font-size: 6mm;
+	}
+}
+@media screen and (max-width: 600px){
+	.portada{
+		margin-bottom: 0;
+	}
+	#cont-resumen{
+		overflow: scroll;
+		height: 350px;
+	}
+	.cont-tarjetas{
+		grid-template-columns: 300px;
+	}
+	video{
+		width: 100%;
 	}
 }
