@@ -125,17 +125,11 @@ img{
 	}
 	video{
 		width: 90%;
+		height: 250px;
 	}
 	h1{
 		font-size: 12mm;
 		margin: 120px 0 0 20px;
-	}
-<<<<<<< HEAD
-=======
-	video{
-		width: 100vw;
-		height: 250px;
-		border-radius: 0;
 	}
 	.cont-resumen{
 		overflow: scroll;
@@ -144,7 +138,6 @@ img{
 	.cont-resumen p{
 		margin-top: 490px;
 	}
->>>>>>> 17fa59624baea43fc7b87c444484817f544e3777
 	.cont-tarjetas{
 		grid-template-columns: 60%;
 	}
@@ -152,7 +145,7 @@ img{
 		font-size: 6mm;
 	}
 }
-<<<<<<< HEAD
+
 @media screen and (max-width: 600px){
 	.portada{
 		margin-bottom: 0;
@@ -166,14 +159,9 @@ img{
 	}
 	video{
 		width: 100%;
-=======
-@media screen and (max-width: 400px){
-	.cont-resumen{
-		overflow: scroll;
-		height: 400px;
+		border-radius: 0;
 	}
 	a{
 		width: 80%;
->>>>>>> 17fa59624baea43fc7b87c444484817f544e3777
 	}
 }
